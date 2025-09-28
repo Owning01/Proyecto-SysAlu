@@ -24,12 +24,13 @@ namespace SistemaParcial2OctavioGonzalez
         private IconButton Current2;
         private string modoActual = "";
         private int nroComision = 0;
-        private List<(int comision, string nombre, int legajo, int edad, string correo)> estudiantes;
+        private List<(int comision, string nombre, int edad, int legajo, int DNI, string correo)> estudiantes;
         public Form2()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            estudiantes = new List<(int comision, string nombre, int legajo, int edad, string correo)>();
+            estudiantes = new List<(int comision, string nombre, int edad, int legajo, int DNI, string correo)>();
+            //Panel superior, con boton de cerrar nomas 
             panel3.Dock = DockStyle.Top;
             panel3.Height = 30;
             panel3.BackColor = Color.FromArgb(0, 171, 148);
@@ -46,15 +47,8 @@ namespace SistemaParcial2OctavioGonzalez
             };
             this.Controls.Add(panel3);
             IconButton btnCerrar = new IconButton();
-            btnCerrar.IconSize = 20;
-            btnCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
-            btnCerrar.IconColor = Color.FromArgb(0, 58, 68); ;
-            btnCerrar.Dock = DockStyle.Right;
-            btnCerrar.FlatStyle= FlatStyle.Flat;
-            btnCerrar.Width = 30;
-            btnCerrar.FlatAppearance.BorderColor = Color.Gray;
-            btnCerrar.BackColor = Color.FromArgb(0, 171, 148) ;
-            btnCerrar.Click += (object s, EventArgs t) => Application.Exit();
+
+            
             panel3.Controls.Add(btnCerrar);
            
             //borde izquierdo para botones seleccionados en el panel izquierdo. 
@@ -80,7 +74,6 @@ namespace SistemaParcial2OctavioGonzalez
             comision5.Click += btnComision_Click;
             comision6.Click += btnComision_Click;
             comision7.Click += btnComision_Click;
-            
             comision1.Tag = 1;
             comision2.Tag = 2;
             comision3.Tag = 3;
@@ -88,11 +81,15 @@ namespace SistemaParcial2OctavioGonzalez
             comision5.Tag = 5;
             comision6.Tag = 6;
             comision7.Tag = 7;
-
+            //Esto es para el boton eliminar, para que no tire eer
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; 
             dataGridView1.MultiSelect = false; 
-            dataGridView1.AllowUserToAddRows = false; 
+            dataGridView1.AllowUserToAddRows = false;
 
+
+            //Panel formuarlio para estadistica
+
+            panelformulario.Visible = true;
         }
 //PERSONALIZACION:Cambia de color los botones seleccionados del panel superior cuando selecc notas o alumnos. 
         private void enviar (Object botonsito)
@@ -103,11 +100,10 @@ namespace SistemaParcial2OctavioGonzalez
             if (Current != null && Current != b)
             {
                 Current.BackColor = Color.FromArgb(0, 58, 68);
-                Color.FromArgb(101, 164, 171);
+                
                 Current.IconColor = Color.FromArgb(101, 164, 171);
             }
             Current = b;
-
         }
 
 //PERSONALIZACION:Cambia de color y posicion los botones del panel izquierdo.
@@ -131,8 +127,6 @@ namespace SistemaParcial2OctavioGonzalez
                 leftBorder.Left = 0;
                 leftBorder.Visible = true;
                 leftBorder.BringToFront();
-                
-               
             }
         }
         private void enviar3 ()
@@ -156,8 +150,6 @@ namespace SistemaParcial2OctavioGonzalez
             iconButton4.Visible = false;
             botonañadir.Visible = false;
             placeholderTextBox1.Visible = false;
-         
-            
         }
 //Boton alumno 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -180,7 +172,8 @@ namespace SistemaParcial2OctavioGonzalez
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
                 panelcomision.Visible = true;
-
+                ocultarformulario();
+                dataGridView1.Visible = true;
             }
             else
             {
@@ -195,7 +188,9 @@ namespace SistemaParcial2OctavioGonzalez
                 botonañadir.Visible = false;
                 pictureBox2.Visible = true;
                 label1.Visible = true;
-                
+                ocultarformulario();
+
+
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
                 //volver al color normal
@@ -218,48 +213,75 @@ namespace SistemaParcial2OctavioGonzalez
             botonañadir.Visible = false;
             label1.Visible = false;
             iconButton4.Visible= true;
-            
+            dataGridView1.Visible = true;
+
             panelcomision.Visible = true;
             //LIMPIAR DATAGRID
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
-            
+            ocultarformulario();
+        }
+        //Funcion ocultar panel formularios. 
+        private void ocultarformulario()
+        {
+            panelformulario.Controls.Clear();
+            panelformulario.Visible = false;
         }
 
+        //Funcion para abrir formulario desde el panel que quiera
 
-        //Funcion
-
-private void AbrirFormHija(object formhija)
+        private void AbrirFormHija(Form formhija)
         {
             if (this.panelformulario.Controls.Count > 0)
-                this.panelformulario.Controls.RemoveAt(0);
-            Form fh = formhija as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panelformulario.Controls.Add(fh);
-            this.panelformulario.Tag = fh;
-            panelformulario.BringToFront();
-            panelformulario.BorderStyle = BorderStyle.None;
-            panelformulario.BackColor = Color.White;
-
-            fh.Show();
+                this.panelformulario.Controls.RemoveAt(0);//Controla de que un formulario no haya sido abierto
+            {
+                Form fh = formhija;
+                fh.TopLevel = false; //Indica que el formulario que se abrira, no sera el "admiN"
+                fh.Dock = DockStyle.Fill;  
+                this.panelformulario.Controls.Add(fh); //Añade el formulario al panel como si fuera un control 
+                this.panelformulario.Tag = fh;
+                fh.Show();
+                //Personalizacion del panel
+                panelformulario.BringToFront(); 
+                panelformulario.BorderStyle = BorderStyle.None;
+                panelformulario.BackColor = Color.White;
+                panelformulario.Visible = true;
+            }
         }
-
-        //Boton estadistica
-        private void iconButton2_Click(object sender, EventArgs e)
+        //Funcion para ocultar en el boton estadistica lo que no quiero que se vea en el panel. 
+        private void ocultarenestadistica()
         {
-            enviar2(sender);
-            panelcomision.Visible = false;
-            dataGridView1.Rows.Clear();
-            dataGridView1.Columns.Clear();
             placeholderTextBox1.Visible = false;
             iconButton7.Visible = false;
             iconButton6.Visible = false;
             iconButton5.Visible = false;
             iconButton4.Visible = false;
-
-            AbrirFormHija(new Form4());
-
+            pictureBox2.Visible = false;
+            label1.Visible = false;
+            panelcomision.Visible = false;
+            botonañadir.Visible = false; 
+            dataGridView1.Rows.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Visible = false;
+        }
+        //Boton estadistica
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            if (iconButton2.IconColor == Color.FromArgb(101, 164, 171))
+            {
+                enviar2(sender);
+                ocultarenestadistica();
+                AbrirFormHija(new Form4());
+            }
+            else 
+            {
+                iconButton2.IconColor = Color.FromArgb(101, 164, 171);
+                pictureBox2.Visible = true;
+                label1.Visible = true;
+                //cerrar el formulario 4 
+                panelformulario.Controls.Clear();
+                panelformulario.Visible = false;
+            }
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -271,7 +293,7 @@ private void AbrirFormHija(object formhija)
             if (f.ShowDialog() == DialogResult.OK)
             {
                 estudiantes.Add(f.Estudiante);
-                dataGridView1.Rows.Add(f.Estudiante.nombre, f.Estudiante.legajo, f.Estudiante.edad, f.Estudiante.correo);
+                dataGridView1.Rows.Add(f.Estudiante.nombre, f.Estudiante.edad, f.Estudiante.legajo, f.Estudiante.DNI, f.Estudiante.correo);
 
             }
         }
@@ -369,32 +391,21 @@ private void AbrirFormHija(object formhija)
 
             }
         }
-
         private void placeholderTextBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
-
 
 //PERSONALIZACION:para poder mover ventana
         private void Form2_MouseDown(object sender, MouseEventArgs e)
@@ -411,33 +422,24 @@ private void AbrirFormHija(object formhija)
         private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-           
         }
 //PERSONALIZACION:Este es el panel de arriba del boton cerrar.
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             panel3.MouseDown += Form2_MouseDown;
-
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
-
         private void panelfondo_Paint(object sender, PaintEventArgs e)
         {
-           
         }
-
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
         //COMISIONES BOTONES.
         private void comision1_Click(object sender, EventArgs e)
         {
-
         }
         private void btnComision_Click(object sender, EventArgs e)
         {
@@ -455,84 +457,67 @@ private void AbrirFormHija(object formhija)
                     //Cargo columna
                     foreach (var n in obj.Ob8())
                     {
-                        dataGridView1.Columns.Add(n.codigo, n.materia);
+                        dataGridView1.Columns.Add(n.codigo, n.campo);
                     }
                     //Cargo filas
                     foreach (var alumno in obj.Obcomision(nroComision))
                     {
-                        dataGridView1.Rows.Add(alumno.Nombre, alumno.Legajo, alumno.DNI, alumno.Correo);
+                        dataGridView1.Rows.Add(alumno.Nombre, alumno.edad, alumno.Legajo, alumno.DNI, alumno.Correo);
                     }
                 }
                 else if (modoActual == "Notas")
                 {
-                    foreach (var n in obj1.colu())
+                    foreach (var p in obj1.colu())
                     {
-                        dataGridView1.Columns.Add(n.codigo, n.materia);
+                        dataGridView1.Columns.Add(p.codigo, p.campo);// columnas 
                     }
                     foreach (var alumno in obj.Obcomision(nroComision))
                     {
-                        dataGridView1.Rows.Add(alumno.Nombre);
+                        dataGridView1.Rows.Add(alumno.Nombre); //Añado todaslasfilas de cada nombre.
                     }
-
                     int fila = 0;
-                    foreach (var t in obj1.N())
+                    foreach (var t in obj1.Nota(nroComision))
                     {
                         dataGridView1.Rows[fila].Cells["Lengua"].Value = t.Lengua;
                         dataGridView1.Rows[fila].Cells["Ingles"].Value = t.Ingles;
                         dataGridView1.Rows[fila].Cells["Matematica"].Value = t.Matematica;
                         dataGridView1.Rows[fila].Cells["Economia"].Value = t.Economia;
                         dataGridView1.Rows[fila].Cells["Politica"].Value = t.Politica;
+                        dataGridView1.Rows[fila].Cells["Asistencia"].Value = t.Asistencia;
                         fila++;
                     }
                 }
             }
             else
             {
-              
                 btn.IconColor = Color.FromArgb(101, 164, 171);
-               
-
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
             }
         }
         private void comision2_Click(object sender, EventArgs e)
         {
-       
         }
-
         private void comision3_Click(object sender, EventArgs e)
         {
-            
         }
-
         private void comision4_Click(object sender, EventArgs e)
         {
-          
         }
-
         private void comision5_Click(object sender, EventArgs e)
         {
-            
         }
-
         private void comision6_Click(object sender, EventArgs e)
         {
-            
         }
         private void comision7_Click_1(object sender, EventArgs e)
         {
-           
         }
-
         private void panelcomision_Paint(object sender, PaintEventArgs e)
         {
-
         }
-
         private void iconButton4_Click_1(object sender, EventArgs e)
         {
-
             Random rnd = new Random();
             // Recorremos todas las filas
             for (int fila = 0; fila < dataGridView1.Rows.Count; fila++)
@@ -550,38 +535,9 @@ private void AbrirFormHija(object formhija)
                 dataGridView1.Rows[fila].Cells["Politica"].Value = n5;
             }
         }
-
         private void panelformulario_Paint(object sender, PaintEventArgs e)
         {
-
-
         }
-
-        //METODO GENERICO PARA ABRIR FORMULARIOS DENTRO DE UN PANEL.
-
-        //private void Abrirform<MiForm>() where MiForm : Form, new()
-        //{
-        //    Form formulario;
-        //    formulario = panel1.Controls.OfType < MiForm > ().FirstOrDefault();//Busca en la colección el form
-
-        //    //si no existe
-
-        //    if (formulario == null)
-        //    {
-        //        formulario = new MiForm();
-        //        formulario.TopLevel = false;
-        //        //formulario.Dock = DockStyle.Fill;
-        //        panelformularios.Controls.Add(formulario);
-        //        panelformularios.Tag = formulario;
-        //        //formulario.FormBorderStyle = FormBorderStyle.None;
-        //        formulario.Show();
-        //        formulario.BringToFront();
-        //    }
-        //    else
-        //    {
-        //        formulario.BringToFront();
-        //    }
-
     }
 }
 //Uso .nombre, .legajo, etc para llamar a cada dato de la tupla, pero porque en el metdo Obtener las llame asi. 

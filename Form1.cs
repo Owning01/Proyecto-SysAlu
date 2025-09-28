@@ -48,7 +48,7 @@ namespace SistemaParcial2OctavioGonzalez
         }
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "admin")
+            if (textBox1.Text.Trim().ToLower()== "admin")
             {
                 if (textBox2.Text == "1234")
                 {
