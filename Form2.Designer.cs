@@ -41,8 +41,6 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -56,25 +54,16 @@
             this.panelfondo = new System.Windows.Forms.Panel();
             this.panelformulario = new System.Windows.Forms.Panel();
             this.panelcomision = new System.Windows.Forms.Panel();
-            this.comision1 = new FontAwesome.Sharp.IconButton();
-            this.comision4 = new FontAwesome.Sharp.IconButton();
-            this.comision5 = new FontAwesome.Sharp.IconButton();
-            this.comision3 = new FontAwesome.Sharp.IconButton();
-            this.comision6 = new FontAwesome.Sharp.IconButton();
-            this.comision7 = new FontAwesome.Sharp.IconButton();
-            this.comision2 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.controlBox1 = new ReaLTaiizor.Controls.ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelfondo.SuspendLayout();
-            this.panelcomision.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -83,10 +72,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(96, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -106,11 +95,11 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton3.IconSize = 45;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(6, 524);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Location = new System.Drawing.Point(4, 426);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton3.Size = new System.Drawing.Size(269, 83);
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton3.Size = new System.Drawing.Size(202, 67);
             this.iconButton3.TabIndex = 24;
             this.iconButton3.Text = "Notas";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,9 +113,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
-            this.label2.Location = new System.Drawing.Point(81, 111);
+            this.label2.Location = new System.Drawing.Point(61, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 28);
+            this.label2.Size = new System.Drawing.Size(63, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "SisAlu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -145,11 +135,11 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton2.IconSize = 45;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(6, 602);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Location = new System.Drawing.Point(4, 489);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton2.Size = new System.Drawing.Size(269, 83);
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton2.Size = new System.Drawing.Size(202, 67);
             this.iconButton2.TabIndex = 23;
             this.iconButton2.Text = "Estadistica";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,11 +161,11 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 45;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(6, 442);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Location = new System.Drawing.Point(4, 359);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton1.Size = new System.Drawing.Size(269, 83);
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton1.Size = new System.Drawing.Size(202, 67);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.Text = "Alumnos";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,11 +186,11 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton5.IconSize = 35;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(431, 37);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton5.Location = new System.Drawing.Point(323, 30);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton5.Size = new System.Drawing.Size(61, 39);
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton5.Size = new System.Drawing.Size(46, 32);
             this.iconButton5.TabIndex = 27;
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -218,9 +208,9 @@
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 1023);
+            this.panel1.Size = new System.Drawing.Size(206, 831);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -229,30 +219,34 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(56)))));
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Location = new System.Drawing.Point(0, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(271, 164);
+            this.panel5.Size = new System.Drawing.Size(203, 133);
             this.panel5.TabIndex = 28;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(275, 112);
+            this.panel4.Location = new System.Drawing.Point(206, 91);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1522, 50);
+            this.panel4.Size = new System.Drawing.Size(1142, 41);
             this.panel4.TabIndex = 20;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Location = new System.Drawing.Point(2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1696, 24);
+            this.panel3.Size = new System.Drawing.Size(1272, 20);
             this.panel3.TabIndex = 27;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.panel2.Controls.Add(this.controlBox1);
             this.panel2.Controls.Add(this.iconButton4);
             this.panel2.Controls.Add(this.iconButton7);
             this.panel2.Controls.Add(this.iconButton5);
@@ -260,10 +254,10 @@
             this.panel2.Controls.Add(this.placeholderTextBox1);
             this.panel2.Controls.Add(this.botonañadir);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(275, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(206, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1525, 110);
+            this.panel2.Size = new System.Drawing.Size(1144, 89);
             this.panel2.TabIndex = 28;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -281,11 +275,11 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(571, 37);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton4.Location = new System.Drawing.Point(428, 30);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(66, 39);
+            this.iconButton4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton4.Size = new System.Drawing.Size(50, 32);
             this.iconButton4.TabIndex = 30;
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -305,11 +299,11 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton7.IconSize = 32;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(284, 37);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton7.Location = new System.Drawing.Point(213, 30);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton7.Size = new System.Drawing.Size(61, 39);
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton7.Size = new System.Drawing.Size(46, 32);
             this.iconButton7.TabIndex = 29;
             this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -329,11 +323,11 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton6.IconSize = 40;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(351, 37);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton6.Location = new System.Drawing.Point(263, 30);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton6.Size = new System.Drawing.Size(61, 39);
+            this.iconButton6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton6.Size = new System.Drawing.Size(46, 32);
             this.iconButton6.TabIndex = 28;
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -343,11 +337,11 @@
             // placeholderTextBox1
             // 
             this.placeholderTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeholderTextBox1.Location = new System.Drawing.Point(22, 46);
-            this.placeholderTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.placeholderTextBox1.Location = new System.Drawing.Point(16, 37);
+            this.placeholderTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.placeholderTextBox1.Name = "placeholderTextBox1";
             this.placeholderTextBox1.PlaceholderText = "Nombre, DNI o legajo";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(221, 30);
+            this.placeholderTextBox1.Size = new System.Drawing.Size(167, 26);
             this.placeholderTextBox1.TabIndex = 24;
             this.placeholderTextBox1.TextChanged += new System.EventHandler(this.placeholderTextBox1_TextChanged);
             // 
@@ -365,11 +359,11 @@
             this.botonañadir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.botonañadir.IconSize = 35;
             this.botonañadir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonañadir.Location = new System.Drawing.Point(504, 37);
-            this.botonañadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.botonañadir.Location = new System.Drawing.Point(378, 30);
+            this.botonañadir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonañadir.Name = "botonañadir";
-            this.botonañadir.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.botonañadir.Size = new System.Drawing.Size(61, 39);
+            this.botonañadir.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.botonañadir.Size = new System.Drawing.Size(46, 32);
             this.botonañadir.TabIndex = 25;
             this.botonañadir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.botonañadir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -383,8 +377,9 @@
             this.panelfondo.Controls.Add(this.dataGridView1);
             this.panelfondo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelfondo.Location = new System.Drawing.Point(0, 0);
+            this.panelfondo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelfondo.Name = "panelfondo";
-            this.panelfondo.Size = new System.Drawing.Size(1800, 1023);
+            this.panelfondo.Size = new System.Drawing.Size(1350, 831);
             this.panelfondo.TabIndex = 31;
             this.panelfondo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelfondo_Paint);
             // 
@@ -394,9 +389,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelformulario.BackColor = System.Drawing.Color.Transparent;
-            this.panelformulario.Location = new System.Drawing.Point(278, 169);
+            this.panelformulario.Location = new System.Drawing.Point(208, 137);
+            this.panelformulario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelformulario.Name = "panelformulario";
-            this.panelformulario.Size = new System.Drawing.Size(1510, 842);
+            this.panelformulario.Size = new System.Drawing.Size(1132, 684);
             this.panelformulario.TabIndex = 20;
             this.panelformulario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelformulario_Paint);
             // 
@@ -405,195 +401,14 @@
             this.panelcomision.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelcomision.AutoSize = true;
-            this.panelcomision.Controls.Add(this.comision1);
-            this.panelcomision.Controls.Add(this.comision4);
-            this.panelcomision.Controls.Add(this.comision5);
-            this.panelcomision.Controls.Add(this.comision3);
-            this.panelcomision.Controls.Add(this.comision6);
-            this.panelcomision.Controls.Add(this.comision7);
-            this.panelcomision.Controls.Add(this.comision2);
-            this.panelcomision.Location = new System.Drawing.Point(275, 112);
+            this.panelcomision.Location = new System.Drawing.Point(206, 91);
+            this.panelcomision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelcomision.Name = "panelcomision";
             this.panelcomision.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelcomision.Size = new System.Drawing.Size(1528, 53);
+            this.panelcomision.Size = new System.Drawing.Size(1146, 43);
             this.panelcomision.TabIndex = 19;
             this.panelcomision.Visible = false;
             this.panelcomision.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcomision_Paint);
-            // 
-            // comision1
-            // 
-            this.comision1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision1.FlatAppearance.BorderSize = 2;
-            this.comision1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision1.ForeColor = System.Drawing.Color.White;
-            this.comision1.IconChar = FontAwesome.Sharp.IconChar._1;
-            this.comision1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision1.IconSize = 20;
-            this.comision1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision1.Location = new System.Drawing.Point(0, -1);
-            this.comision1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision1.Name = "comision1";
-            this.comision1.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision1.Size = new System.Drawing.Size(228, 52);
-            this.comision1.TabIndex = 29;
-            this.comision1.Text = "Comision ";
-            this.comision1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision1.UseVisualStyleBackColor = false;
-            this.comision1.Click += new System.EventHandler(this.comision1_Click);
-            // 
-            // comision4
-            // 
-            this.comision4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision4.FlatAppearance.BorderSize = 2;
-            this.comision4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision4.ForeColor = System.Drawing.Color.White;
-            this.comision4.IconChar = FontAwesome.Sharp.IconChar._4;
-            this.comision4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision4.IconSize = 20;
-            this.comision4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision4.Location = new System.Drawing.Point(658, -1);
-            this.comision4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision4.Name = "comision4";
-            this.comision4.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision4.Size = new System.Drawing.Size(216, 52);
-            this.comision4.TabIndex = 33;
-            this.comision4.Text = "Comision";
-            this.comision4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision4.UseVisualStyleBackColor = false;
-            this.comision4.Click += new System.EventHandler(this.comision4_Click);
-            // 
-            // comision5
-            // 
-            this.comision5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision5.FlatAppearance.BorderSize = 2;
-            this.comision5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision5.ForeColor = System.Drawing.Color.White;
-            this.comision5.IconChar = FontAwesome.Sharp.IconChar._5;
-            this.comision5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision5.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision5.IconSize = 20;
-            this.comision5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision5.Location = new System.Drawing.Point(875, -1);
-            this.comision5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision5.Name = "comision5";
-            this.comision5.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision5.Size = new System.Drawing.Size(216, 52);
-            this.comision5.TabIndex = 34;
-            this.comision5.Text = "Comision";
-            this.comision5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision5.UseVisualStyleBackColor = false;
-            this.comision5.Click += new System.EventHandler(this.comision5_Click);
-            // 
-            // comision3
-            // 
-            this.comision3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision3.FlatAppearance.BorderSize = 2;
-            this.comision3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision3.ForeColor = System.Drawing.Color.White;
-            this.comision3.IconChar = FontAwesome.Sharp.IconChar._3;
-            this.comision3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision3.IconSize = 20;
-            this.comision3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision3.Location = new System.Drawing.Point(436, -1);
-            this.comision3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision3.Name = "comision3";
-            this.comision3.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision3.Size = new System.Drawing.Size(224, 52);
-            this.comision3.TabIndex = 32;
-            this.comision3.Text = "Comision";
-            this.comision3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision3.UseVisualStyleBackColor = false;
-            this.comision3.Click += new System.EventHandler(this.comision3_Click);
-            // 
-            // comision6
-            // 
-            this.comision6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision6.FlatAppearance.BorderSize = 2;
-            this.comision6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision6.ForeColor = System.Drawing.Color.White;
-            this.comision6.IconChar = FontAwesome.Sharp.IconChar._6;
-            this.comision6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision6.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision6.IconSize = 20;
-            this.comision6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision6.Location = new System.Drawing.Point(1091, -1);
-            this.comision6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision6.Name = "comision6";
-            this.comision6.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision6.Size = new System.Drawing.Size(216, 52);
-            this.comision6.TabIndex = 35;
-            this.comision6.Text = "Comision";
-            this.comision6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision6.UseVisualStyleBackColor = false;
-            this.comision6.Click += new System.EventHandler(this.comision6_Click);
-            // 
-            // comision7
-            // 
-            this.comision7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision7.FlatAppearance.BorderSize = 2;
-            this.comision7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision7.ForeColor = System.Drawing.Color.White;
-            this.comision7.IconChar = FontAwesome.Sharp.IconChar._7;
-            this.comision7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision7.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision7.IconSize = 20;
-            this.comision7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision7.Location = new System.Drawing.Point(1309, -1);
-            this.comision7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision7.Name = "comision7";
-            this.comision7.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision7.Size = new System.Drawing.Size(216, 52);
-            this.comision7.TabIndex = 30;
-            this.comision7.Text = "Comision";
-            this.comision7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision7.UseVisualStyleBackColor = false;
-            this.comision7.Click += new System.EventHandler(this.comision7_Click_1);
-            // 
-            // comision2
-            // 
-            this.comision2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision2.FlatAppearance.BorderSize = 2;
-            this.comision2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision2.ForeColor = System.Drawing.Color.White;
-            this.comision2.IconChar = FontAwesome.Sharp.IconChar._2;
-            this.comision2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision2.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision2.IconSize = 20;
-            this.comision2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision2.Location = new System.Drawing.Point(228, -1);
-            this.comision2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision2.Name = "comision2";
-            this.comision2.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision2.Size = new System.Drawing.Size(216, 52);
-            this.comision2.TabIndex = 31;
-            this.comision2.Text = "Comision";
-            this.comision2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision2.UseVisualStyleBackColor = false;
-            this.comision2.Click += new System.EventHandler(this.comision2_Click);
             // 
             // dataGridView1
             // 
@@ -630,8 +445,8 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.dataGridView1.Location = new System.Drawing.Point(275, 167);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(206, 136);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -650,7 +465,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1513, 845);
+            this.dataGridView1.Size = new System.Drawing.Size(1135, 687);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -659,10 +474,10 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(933, 340);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(700, 276);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox2.Size = new System.Drawing.Size(225, 244);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
@@ -675,20 +490,40 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
-            this.label1.Location = new System.Drawing.Point(1000, 642);
+            this.label1.Location = new System.Drawing.Point(750, 522);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 49);
+            this.label1.Size = new System.Drawing.Size(111, 40);
             this.label1.TabIndex = 29;
             this.label1.Text = "SisAlu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // controlBox1
+            // 
+            this.controlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.controlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.controlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.controlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.controlBox1.DefaultLocation = true;
+            this.controlBox1.EnableHoverHighlight = true;
+            this.controlBox1.EnableMaximizeButton = true;
+            this.controlBox1.EnableMinimizeButton = true;
+            this.controlBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.controlBox1.Location = new System.Drawing.Point(1056, 2);
+            this.controlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.controlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.controlBox1.Name = "controlBox1";
+            this.controlBox1.Size = new System.Drawing.Size(90, 25);
+            this.controlBox1.TabIndex = 31;
+            this.controlBox1.Text = "controlBox1";
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1800, 1023);
+            this.ClientSize = new System.Drawing.Size(1350, 831);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
@@ -696,15 +531,14 @@
             this.Controls.Add(this.panelfondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1800, 1000);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(1350, 812);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -712,7 +546,6 @@
             this.panel2.PerformLayout();
             this.panelfondo.ResumeLayout(false);
             this.panelfondo.PerformLayout();
-            this.panelcomision.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -721,9 +554,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label label2;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
@@ -739,20 +570,13 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private FontAwesome.Sharp.IconButton comision1;
-        private FontAwesome.Sharp.IconButton comision2;
-        private FontAwesome.Sharp.IconButton comision3;
-        private FontAwesome.Sharp.IconButton comision4;
-        private FontAwesome.Sharp.IconButton comision5;
-        private FontAwesome.Sharp.IconButton comision6;
-        private FontAwesome.Sharp.IconButton comision7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelcomision;
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton botonañadir;
         private System.Windows.Forms.Panel panelformulario;
+        private ReaLTaiizor.Controls.ControlBox controlBox1;
     }
 }

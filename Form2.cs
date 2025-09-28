@@ -32,7 +32,7 @@ namespace SistemaParcial2OctavioGonzalez
             estudiantes = new List<(int comision, string nombre, int edad, int legajo, int DNI, string correo)>();
             //Panel superior, con boton de cerrar nomas 
             panel3.Dock = DockStyle.Top;
-            panel3.Height = 30;
+            panel3.Height = 25;
             panel3.BackColor = Color.FromArgb(0, 171, 148);
             FormBorderStyle = FormBorderStyle.None;
             panel3.Paint += (s, e) =>
@@ -46,10 +46,9 @@ namespace SistemaParcial2OctavioGonzalez
                     bordeColor, grosor, ButtonBorderStyle.Solid);
             };
             this.Controls.Add(panel3);
-            IconButton btnCerrar = new IconButton();
-
-            
-            panel3.Controls.Add(btnCerrar);
+            //boton adicional
+            controlBox1.Dock = DockStyle.Right;
+            panel3.Controls.Add(controlBox1);
            
             //borde izquierdo para botones seleccionados en el panel izquierdo. 
             leftBorder = new Panel();
@@ -65,22 +64,6 @@ namespace SistemaParcial2OctavioGonzalez
             toolTip1.SetToolTip(iconButton5, "Eliminar seleccion");
             toolTip1.SetToolTip(iconButton7, "Buscar por nombre, dni, o legajo.");
 
-            //botones comisiones
-
-            comision1.Click += btnComision_Click;
-            comision2.Click += btnComision_Click;
-            comision3.Click += btnComision_Click;
-            comision4.Click += btnComision_Click;
-            comision5.Click += btnComision_Click;
-            comision6.Click += btnComision_Click;
-            comision7.Click += btnComision_Click;
-            comision1.Tag = 1;
-            comision2.Tag = 2;
-            comision3.Tag = 3;
-            comision4.Tag = 4;
-            comision5.Tag = 5;
-            comision6.Tag = 6;
-            comision7.Tag = 7;
             //Esto es para el boton eliminar, para que no tire eer
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; 
             dataGridView1.MultiSelect = false; 
@@ -355,18 +338,7 @@ namespace SistemaParcial2OctavioGonzalez
         {
             Application.Exit();
         }
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Form1 f = new Form1();
-            f.Show();
-            this.Hide();
-        }
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Form3 f = new Form3();
-            f.Show();
-            this.Hide();
-        }
+
 
         //BOTON PARA ELIMINAR ALUMNO. 
         private void iconButton5_Click(object sender, EventArgs e)
@@ -434,13 +406,9 @@ namespace SistemaParcial2OctavioGonzalez
         private void panelfondo_Paint(object sender, PaintEventArgs e)
         {
         }
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
+   
         //COMISIONES BOTONES.
-        private void comision1_Click(object sender, EventArgs e)
-        {
-        }
+ 
         private void btnComision_Click(object sender, EventArgs e)
         {
            IconButton btn = sender as IconButton;
@@ -495,24 +463,7 @@ namespace SistemaParcial2OctavioGonzalez
                 dataGridView1.Rows.Clear();
             }
         }
-        private void comision2_Click(object sender, EventArgs e)
-        {
-        }
-        private void comision3_Click(object sender, EventArgs e)
-        {
-        }
-        private void comision4_Click(object sender, EventArgs e)
-        {
-        }
-        private void comision5_Click(object sender, EventArgs e)
-        {
-        }
-        private void comision6_Click(object sender, EventArgs e)
-        {
-        }
-        private void comision7_Click_1(object sender, EventArgs e)
-        {
-        }
+     
         private void panelcomision_Paint(object sender, PaintEventArgs e)
         {
         }

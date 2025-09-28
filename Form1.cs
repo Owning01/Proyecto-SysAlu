@@ -39,7 +39,7 @@ namespace SistemaParcial2OctavioGonzalez
             Form3 f = new Form3();
             f.Show();
             this.Hide();
-        }
+        }   
         private void button5_Click(object sender, EventArgs e)
         {
             Form4 f = new Form4();
@@ -48,10 +48,12 @@ namespace SistemaParcial2OctavioGonzalez
         }
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Trim().ToLower()== "admin")
+            if (usuario.Text.Trim().ToLower()== "admin")
             {
-                if (textBox2.Text == "1234")
+                
+                if ( contraseña.Content.Trim()=="1234")
                 {
+                    MessageBox.Show("Bienvenido", "Acceso concedido");
                     Form2 f = new Form2();
                     f.Show();
                     this.Hide();
@@ -67,16 +69,7 @@ namespace SistemaParcial2OctavioGonzalez
         }
         private void iconButton6_Click(object sender, EventArgs e)
         {
-            if (iconButton6.IconChar == FontAwesome.Sharp.IconChar.Eye)
-            {
-                iconButton6.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-                textBox2.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                iconButton6.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                textBox2.UseSystemPasswordChar = true;
-            }
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -104,5 +97,10 @@ namespace SistemaParcial2OctavioGonzalez
 
         [DllImport("user32.dll")]
         private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
+        private void contraseña_FinishedTypingContent(object sender, EventArgs e)
+        {
+
+        }
     }
 }
