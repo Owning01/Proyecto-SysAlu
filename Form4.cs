@@ -19,12 +19,36 @@ namespace SistemaParcial2OctavioGonzalez
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+   
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+            materias.Text = "";
+            promedioedad.Text = "";
+            promedionota.Text = "";
+            total1.Text = "";
+            total2.Text = "";
+            total3.Text = "";
+            
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

@@ -41,52 +41,50 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.controlBox1 = new ReaLTaiizor.Controls.ControlBox();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.placeholderTextBox1 = new PlaceholderTextBox.PlaceholderTextBox();
             this.botonañadir = new FontAwesome.Sharp.IconButton();
-            this.panelfondo = new System.Windows.Forms.Panel();
-            this.panelcomision = new System.Windows.Forms.Panel();
-            this.comision1 = new FontAwesome.Sharp.IconButton();
-            this.comision4 = new FontAwesome.Sharp.IconButton();
-            this.comision5 = new FontAwesome.Sharp.IconButton();
-            this.comision3 = new FontAwesome.Sharp.IconButton();
-            this.comision6 = new FontAwesome.Sharp.IconButton();
-            this.comision7 = new FontAwesome.Sharp.IconButton();
-            this.comision2 = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelformulario = new System.Windows.Forms.Panel();
+            this.universidadbox = new CuoreUI.Controls.cuiComboBox();
+            this.fechabox = new CuoreUI.Controls.cuiComboBox();
+            this.iniciar = new ReaLTaiizor.Controls.CyberButton();
+            this.añobox = new CuoreUI.Controls.cuiComboBox();
+            this.placeholderTextBox1 = new CuoreUI.Controls.cuiTextBox();
+            this.unilabel = new System.Windows.Forms.Label();
+            this.fechalabel = new System.Windows.Forms.Label();
+            this.comilabel = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cuiResizeGrip1 = new CuoreUI.Controls.cuiResizeGrip();
+            this.comisionbox = new CuoreUI.Controls.cuiComboBox();
+            this.añolabel = new System.Windows.Forms.Label();
+            this.carrelabel = new System.Windows.Forms.Label();
+            this.carrerabox = new CuoreUI.Controls.cuiComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelfondo.SuspendLayout();
-            this.panelcomision.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelformulario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(96, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -99,20 +97,20 @@
             this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Cascadia Mono", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton3.ForeColor = System.Drawing.Color.White;
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Medal;
             this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton3.IconSize = 45;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(6, 524);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Location = new System.Drawing.Point(4, 426);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton3.Size = new System.Drawing.Size(269, 83);
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton3.Size = new System.Drawing.Size(190, 67);
             this.iconButton3.TabIndex = 24;
-            this.iconButton3.Text = "Notas";
+            this.iconButton3.Text = "NOTAS";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
@@ -124,9 +122,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
-            this.label2.Location = new System.Drawing.Point(81, 111);
+            this.label2.Location = new System.Drawing.Point(61, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 28);
+            this.label2.Size = new System.Drawing.Size(63, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "SisAlu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -138,20 +137,20 @@
             this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Cascadia Mono", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton2.ForeColor = System.Drawing.Color.White;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton2.IconSize = 45;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(6, 602);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Location = new System.Drawing.Point(4, 489);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton2.Size = new System.Drawing.Size(269, 83);
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton2.Size = new System.Drawing.Size(190, 67);
             this.iconButton2.TabIndex = 23;
-            this.iconButton2.Text = "Estadistica";
+            this.iconButton2.Text = "ESTADISTICA";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
@@ -164,20 +163,20 @@
             this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Cascadia Mono", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.White;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 45;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(6, 442);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Location = new System.Drawing.Point(1, 355);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton1.Size = new System.Drawing.Size(269, 83);
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton1.Size = new System.Drawing.Size(190, 67);
             this.iconButton1.TabIndex = 22;
-            this.iconButton1.Text = "Alumnos";
+            this.iconButton1.Text = "ALUMNOS";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -185,6 +184,7 @@
             // 
             // iconButton5
             // 
+            this.iconButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
             this.iconButton5.FlatAppearance.BorderSize = 0;
@@ -196,11 +196,11 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton5.IconSize = 35;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(431, 37);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton5.Location = new System.Drawing.Point(692, 28);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton5.Size = new System.Drawing.Size(61, 39);
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton5.Size = new System.Drawing.Size(46, 32);
             this.iconButton5.TabIndex = 27;
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -211,16 +211,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 1023);
+            this.panel1.Size = new System.Drawing.Size(202, 831);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -229,71 +228,72 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(56)))));
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Location = new System.Drawing.Point(0, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(271, 164);
+            this.panel5.Size = new System.Drawing.Size(203, 144);
             this.panel5.TabIndex = 28;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(275, 112);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1522, 50);
-            this.panel4.TabIndex = 20;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Controls.Add(this.controlBox1);
+            this.panel3.Location = new System.Drawing.Point(2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1696, 24);
+            this.panel3.Size = new System.Drawing.Size(1272, 20);
             this.panel3.TabIndex = 27;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.panel2.Controls.Add(this.iconButton4);
+            this.panel2.Controls.Add(this.carrelabel);
+            this.panel2.Controls.Add(this.carrerabox);
+            this.panel2.Controls.Add(this.añolabel);
+            this.panel2.Controls.Add(this.comisionbox);
+            this.panel2.Controls.Add(this.comilabel);
+            this.panel2.Controls.Add(this.fechalabel);
+            this.panel2.Controls.Add(this.unilabel);
+            this.panel2.Controls.Add(this.placeholderTextBox1);
+            this.panel2.Controls.Add(this.añobox);
+            this.panel2.Controls.Add(this.iniciar);
+            this.panel2.Controls.Add(this.fechabox);
             this.panel2.Controls.Add(this.iconButton7);
+            this.panel2.Controls.Add(this.universidadbox);
             this.panel2.Controls.Add(this.iconButton5);
             this.panel2.Controls.Add(this.iconButton6);
-            this.panel2.Controls.Add(this.placeholderTextBox1);
             this.panel2.Controls.Add(this.botonañadir);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(275, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(202, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1525, 110);
+            this.panel2.Size = new System.Drawing.Size(1148, 146);
             this.panel2.TabIndex = 28;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // iconButton4
+            // controlBox1
             // 
-            this.iconButton4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkSquareAlt;
-            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton4.IconSize = 35;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(571, 37);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(66, 39);
-            this.iconButton4.TabIndex = 30;
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click_1);
+            this.controlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.controlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.controlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.controlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.controlBox1.DefaultLocation = true;
+            this.controlBox1.EnableHoverHighlight = true;
+            this.controlBox1.EnableMaximizeButton = true;
+            this.controlBox1.EnableMinimizeButton = true;
+            this.controlBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.controlBox1.Location = new System.Drawing.Point(0, 0);
+            this.controlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.controlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.controlBox1.Name = "controlBox1";
+            this.controlBox1.Size = new System.Drawing.Size(90, 25);
+            this.controlBox1.TabIndex = 31;
+            this.controlBox1.Text = "controlBox1";
             // 
             // iconButton7
             // 
+            this.iconButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
             this.iconButton7.FlatAppearance.BorderSize = 0;
@@ -305,11 +305,11 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton7.IconSize = 32;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(284, 37);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton7.Location = new System.Drawing.Point(582, 28);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton7.Size = new System.Drawing.Size(61, 39);
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton7.Size = new System.Drawing.Size(46, 32);
             this.iconButton7.TabIndex = 29;
             this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -318,6 +318,7 @@
             // 
             // iconButton6
             // 
+            this.iconButton6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
             this.iconButton6.FlatAppearance.BorderSize = 0;
@@ -329,31 +330,20 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton6.IconSize = 40;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(351, 37);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton6.Location = new System.Drawing.Point(632, 28);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.iconButton6.Size = new System.Drawing.Size(61, 39);
+            this.iconButton6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.iconButton6.Size = new System.Drawing.Size(46, 32);
             this.iconButton6.TabIndex = 28;
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton6.UseVisualStyleBackColor = false;
             this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
-            // placeholderTextBox1
-            // 
-            this.placeholderTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeholderTextBox1.Location = new System.Drawing.Point(22, 46);
-            this.placeholderTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.PlaceholderText = "Nombre, DNI o legajo";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(221, 30);
-            this.placeholderTextBox1.TabIndex = 24;
-            this.placeholderTextBox1.TextChanged += new System.EventHandler(this.placeholderTextBox1_TextChanged);
-            // 
             // botonañadir
             // 
-            this.botonañadir.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.botonañadir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.botonañadir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
             this.botonañadir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
             this.botonañadir.FlatAppearance.BorderSize = 0;
@@ -365,223 +355,255 @@
             this.botonañadir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.botonañadir.IconSize = 35;
             this.botonañadir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonañadir.Location = new System.Drawing.Point(504, 37);
-            this.botonañadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.botonañadir.Location = new System.Drawing.Point(742, 28);
+            this.botonañadir.Margin = new System.Windows.Forms.Padding(2);
             this.botonañadir.Name = "botonañadir";
-            this.botonañadir.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.botonañadir.Size = new System.Drawing.Size(61, 39);
+            this.botonañadir.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.botonañadir.Size = new System.Drawing.Size(46, 32);
             this.botonañadir.TabIndex = 25;
             this.botonañadir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.botonañadir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.botonañadir.UseVisualStyleBackColor = false;
             this.botonañadir.Click += new System.EventHandler(this.iconButton4_Click);
             // 
-            // panelfondo
+            // pictureBox2
             // 
-            this.panelfondo.Controls.Add(this.panelformulario);
-            this.panelfondo.Controls.Add(this.panelcomision);
-            this.panelfondo.Controls.Add(this.dataGridView1);
-            this.panelfondo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelfondo.Location = new System.Drawing.Point(0, 0);
-            this.panelfondo.Name = "panelfondo";
-            this.panelfondo.Size = new System.Drawing.Size(1800, 1023);
-            this.panelfondo.TabIndex = 31;
-            this.panelfondo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelfondo_Paint);
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(700, 276);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(225, 244);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // panelcomision
+            // label1
             // 
-            this.panelcomision.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
+            this.label1.Location = new System.Drawing.Point(750, 522);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 40);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "SisAlu";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panelformulario
+            // 
+            this.panelformulario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelcomision.AutoSize = true;
-            this.panelcomision.Controls.Add(this.comision1);
-            this.panelcomision.Controls.Add(this.comision4);
-            this.panelcomision.Controls.Add(this.comision5);
-            this.panelcomision.Controls.Add(this.comision3);
-            this.panelcomision.Controls.Add(this.comision6);
-            this.panelcomision.Controls.Add(this.comision7);
-            this.panelcomision.Controls.Add(this.comision2);
-            this.panelcomision.Location = new System.Drawing.Point(275, 112);
-            this.panelcomision.Name = "panelcomision";
-            this.panelcomision.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelcomision.Size = new System.Drawing.Size(1528, 53);
-            this.panelcomision.TabIndex = 19;
-            this.panelcomision.Visible = false;
-            this.panelcomision.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcomision_Paint);
+            this.panelformulario.BackColor = System.Drawing.Color.Transparent;
+            this.panelformulario.Controls.Add(this.dataGridView1);
+            this.panelformulario.Location = new System.Drawing.Point(206, 175);
+            this.panelformulario.Margin = new System.Windows.Forms.Padding(2);
+            this.panelformulario.Name = "panelformulario";
+            this.panelformulario.Size = new System.Drawing.Size(1133, 635);
+            this.panelformulario.TabIndex = 20;
+            this.panelformulario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelformulario_Paint);
             // 
-            // comision1
+            // universidadbox
             // 
-            this.comision1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision1.FlatAppearance.BorderSize = 2;
-            this.comision1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision1.ForeColor = System.Drawing.Color.White;
-            this.comision1.IconChar = FontAwesome.Sharp.IconChar._1;
-            this.comision1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision1.IconSize = 20;
-            this.comision1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision1.Location = new System.Drawing.Point(0, -1);
-            this.comision1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision1.Name = "comision1";
-            this.comision1.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision1.Size = new System.Drawing.Size(228, 52);
-            this.comision1.TabIndex = 29;
-            this.comision1.Text = "Comision ";
-            this.comision1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision1.UseVisualStyleBackColor = false;
-            this.comision1.Click += new System.EventHandler(this.comision1_Click);
+            this.universidadbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.universidadbox.BackColor = System.Drawing.Color.Transparent;
+            this.universidadbox.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(57)))), ((int)(((byte)(49)))));
+            this.universidadbox.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.universidadbox.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.universidadbox.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.universidadbox.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.universidadbox.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.universidadbox.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.universidadbox.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.universidadbox.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.universidadbox.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.universidadbox.ExpandArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.universidadbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.universidadbox.ForeColor = System.Drawing.SystemColors.Control;
+            this.universidadbox.Items = new string[0];
+            this.universidadbox.Location = new System.Drawing.Point(17, 103);
+            this.universidadbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.universidadbox.Name = "universidadbox";
+            this.universidadbox.NoSelectionDropdownText = "Empty";
+            this.universidadbox.NoSelectionText = "None";
+            this.universidadbox.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.universidadbox.OutlineThickness = 1F;
+            this.universidadbox.Rounding = 8;
+            this.universidadbox.Size = new System.Drawing.Size(135, 30);
+            this.universidadbox.TabIndex = 29;
+            this.universidadbox.SelectedIndexChanged += new System.EventHandler(this.universidadbox_SelectedIndexChanged);
             // 
-            // comision4
+            // fechabox
             // 
-            this.comision4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision4.FlatAppearance.BorderSize = 2;
-            this.comision4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision4.ForeColor = System.Drawing.Color.White;
-            this.comision4.IconChar = FontAwesome.Sharp.IconChar._4;
-            this.comision4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision4.IconSize = 20;
-            this.comision4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision4.Location = new System.Drawing.Point(658, -1);
-            this.comision4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision4.Name = "comision4";
-            this.comision4.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision4.Size = new System.Drawing.Size(216, 52);
-            this.comision4.TabIndex = 33;
-            this.comision4.Text = "Comision";
-            this.comision4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision4.UseVisualStyleBackColor = false;
-            this.comision4.Click += new System.EventHandler(this.comision4_Click);
+            this.fechabox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fechabox.BackColor = System.Drawing.Color.Transparent;
+            this.fechabox.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(57)))), ((int)(((byte)(49)))));
+            this.fechabox.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.fechabox.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.fechabox.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.fechabox.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.fechabox.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.fechabox.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.fechabox.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.fechabox.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.fechabox.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.fechabox.ExpandArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.fechabox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechabox.ForeColor = System.Drawing.Color.White;
+            this.fechabox.Items = new string[0];
+            this.fechabox.Location = new System.Drawing.Point(403, 103);
+            this.fechabox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechabox.Name = "fechabox";
+            this.fechabox.NoSelectionDropdownText = "Empty";
+            this.fechabox.NoSelectionText = "None";
+            this.fechabox.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.fechabox.OutlineThickness = 1F;
+            this.fechabox.Rounding = 8;
+            this.fechabox.Size = new System.Drawing.Size(135, 30);
+            this.fechabox.TabIndex = 29;
             // 
-            // comision5
+            // iniciar
             // 
-            this.comision5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision5.FlatAppearance.BorderSize = 2;
-            this.comision5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision5.ForeColor = System.Drawing.Color.White;
-            this.comision5.IconChar = FontAwesome.Sharp.IconChar._5;
-            this.comision5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision5.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision5.IconSize = 20;
-            this.comision5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision5.Location = new System.Drawing.Point(875, -1);
-            this.comision5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision5.Name = "comision5";
-            this.comision5.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision5.Size = new System.Drawing.Size(216, 52);
-            this.comision5.TabIndex = 34;
-            this.comision5.Text = "Comision";
-            this.comision5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision5.UseVisualStyleBackColor = false;
-            this.comision5.Click += new System.EventHandler(this.comision5_Click);
+            this.iniciar.Alpha = 20;
+            this.iniciar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iniciar.BackColor = System.Drawing.Color.Transparent;
+            this.iniciar.Background = true;
+            this.iniciar.Background_WidthPen = 4F;
+            this.iniciar.BackgroundPen = true;
+            this.iniciar.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
+            this.iniciar.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.iniciar.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.iniciar.ColorBackground_Pen = System.Drawing.Color.DarkOliveGreen;
+            this.iniciar.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iniciar.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.iniciar.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.iniciar.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.iniciar.Effect_1 = true;
+            this.iniciar.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iniciar.Effect_1_Transparency = 40;
+            this.iniciar.Effect_2 = true;
+            this.iniciar.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.iniciar.Effect_2_Transparency = 40;
+            this.iniciar.Font = new System.Drawing.Font("Arial", 11F);
+            this.iniciar.ForeColor = System.Drawing.Color.Black;
+            this.iniciar.Lighting = false;
+            this.iniciar.LinearGradient_Background = false;
+            this.iniciar.LinearGradientPen = false;
+            this.iniciar.Location = new System.Drawing.Point(887, 100);
+            this.iniciar.Name = "iniciar";
+            this.iniciar.PenWidth = 15;
+            this.iniciar.Rounding = true;
+            this.iniciar.RoundingInt = 70;
+            this.iniciar.Size = new System.Drawing.Size(119, 33);
+            this.iniciar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.iniciar.TabIndex = 33;
+            this.iniciar.Tag = "Cyber";
+            this.iniciar.TextButton = "Aplicar";
+            this.iniciar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.iniciar.Timer_Effect_1 = 5;
+            this.iniciar.Timer_RGB = 300;
+            this.iniciar.Click += new System.EventHandler(this.iniciar_Click);
             // 
-            // comision3
+            // añobox
             // 
-            this.comision3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision3.FlatAppearance.BorderSize = 2;
-            this.comision3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision3.ForeColor = System.Drawing.Color.White;
-            this.comision3.IconChar = FontAwesome.Sharp.IconChar._3;
-            this.comision3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision3.IconSize = 20;
-            this.comision3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision3.Location = new System.Drawing.Point(436, -1);
-            this.comision3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision3.Name = "comision3";
-            this.comision3.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision3.Size = new System.Drawing.Size(224, 52);
-            this.comision3.TabIndex = 32;
-            this.comision3.Text = "Comision";
-            this.comision3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision3.UseVisualStyleBackColor = false;
-            this.comision3.Click += new System.EventHandler(this.comision3_Click);
+            this.añobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.añobox.BackColor = System.Drawing.Color.Transparent;
+            this.añobox.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(57)))), ((int)(((byte)(49)))));
+            this.añobox.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.añobox.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.añobox.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.añobox.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.añobox.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.añobox.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.añobox.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.añobox.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.añobox.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.añobox.ExpandArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.añobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.añobox.ForeColor = System.Drawing.Color.White;
+            this.añobox.Items = new string[0];
+            this.añobox.Location = new System.Drawing.Point(568, 103);
+            this.añobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.añobox.Name = "añobox";
+            this.añobox.NoSelectionDropdownText = "Empty";
+            this.añobox.NoSelectionText = "None";
+            this.añobox.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.añobox.OutlineThickness = 1F;
+            this.añobox.Rounding = 8;
+            this.añobox.Size = new System.Drawing.Size(135, 30);
+            this.añobox.TabIndex = 32;
             // 
-            // comision6
+            // placeholderTextBox1
             // 
-            this.comision6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision6.FlatAppearance.BorderSize = 2;
-            this.comision6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision6.ForeColor = System.Drawing.Color.White;
-            this.comision6.IconChar = FontAwesome.Sharp.IconChar._6;
-            this.comision6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision6.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision6.IconSize = 20;
-            this.comision6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision6.Location = new System.Drawing.Point(1091, -1);
-            this.comision6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision6.Name = "comision6";
-            this.comision6.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision6.Size = new System.Drawing.Size(216, 52);
-            this.comision6.TabIndex = 35;
-            this.comision6.Text = "Comision";
-            this.comision6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision6.UseVisualStyleBackColor = false;
-            this.comision6.Click += new System.EventHandler(this.comision6_Click);
+            this.placeholderTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.placeholderTextBox1.BackgroundColor = System.Drawing.Color.White;
+            this.placeholderTextBox1.Content = "";
+            this.placeholderTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.placeholderTextBox1.FocusBackgroundColor = System.Drawing.Color.White;
+            this.placeholderTextBox1.FocusImageTint = System.Drawing.Color.White;
+            this.placeholderTextBox1.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.placeholderTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.placeholderTextBox1.Image = null;
+            this.placeholderTextBox1.ImageExpand = new System.Drawing.Point(0, 0);
+            this.placeholderTextBox1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.placeholderTextBox1.Location = new System.Drawing.Point(314, 28);
+            this.placeholderTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.placeholderTextBox1.Multiline = false;
+            this.placeholderTextBox1.Name = "placeholderTextBox1";
+            this.placeholderTextBox1.NormalImageTint = System.Drawing.Color.White;
+            this.placeholderTextBox1.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.placeholderTextBox1.Padding = new System.Windows.Forms.Padding(16, 6, 16, 0);
+            this.placeholderTextBox1.PasswordChar = false;
+            this.placeholderTextBox1.PlaceholderColor = System.Drawing.Color.Silver;
+            this.placeholderTextBox1.PlaceholderText = "Buscar nombre, DNI o legajo. ";
+            this.placeholderTextBox1.Rounding = new System.Windows.Forms.Padding(8);
+            this.placeholderTextBox1.Size = new System.Drawing.Size(260, 29);
+            this.placeholderTextBox1.TabIndex = 0;
+            this.placeholderTextBox1.TextOffset = new System.Drawing.Size(0, 0);
+            this.placeholderTextBox1.UnderlinedStyle = true;
             // 
-            // comision7
+            // unilabel
             // 
-            this.comision7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision7.FlatAppearance.BorderSize = 2;
-            this.comision7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision7.ForeColor = System.Drawing.Color.White;
-            this.comision7.IconChar = FontAwesome.Sharp.IconChar._7;
-            this.comision7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision7.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision7.IconSize = 20;
-            this.comision7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision7.Location = new System.Drawing.Point(1309, -1);
-            this.comision7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision7.Name = "comision7";
-            this.comision7.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision7.Size = new System.Drawing.Size(216, 52);
-            this.comision7.TabIndex = 30;
-            this.comision7.Text = "Comision";
-            this.comision7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision7.UseVisualStyleBackColor = false;
-            this.comision7.Click += new System.EventHandler(this.comision7_Click_1);
+            this.unilabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unilabel.AutoSize = true;
+            this.unilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unilabel.ForeColor = System.Drawing.Color.Silver;
+            this.unilabel.Location = new System.Drawing.Point(36, 83);
+            this.unilabel.Name = "unilabel";
+            this.unilabel.Size = new System.Drawing.Size(99, 15);
+            this.unilabel.TabIndex = 34;
+            this.unilabel.Text = "UNIVERSIDAD";
             // 
-            // comision2
+            // fechalabel
             // 
-            this.comision2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.comision2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.comision2.FlatAppearance.BorderSize = 2;
-            this.comision2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comision2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comision2.ForeColor = System.Drawing.Color.White;
-            this.comision2.IconChar = FontAwesome.Sharp.IconChar._2;
-            this.comision2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.comision2.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.comision2.IconSize = 20;
-            this.comision2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.comision2.Location = new System.Drawing.Point(228, -1);
-            this.comision2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comision2.Name = "comision2";
-            this.comision2.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.comision2.Size = new System.Drawing.Size(216, 52);
-            this.comision2.TabIndex = 31;
-            this.comision2.Text = "Comision";
-            this.comision2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comision2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.comision2.UseVisualStyleBackColor = false;
-            this.comision2.Click += new System.EventHandler(this.comision2_Click);
+            this.fechalabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fechalabel.AutoSize = true;
+            this.fechalabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechalabel.ForeColor = System.Drawing.Color.Silver;
+            this.fechalabel.Location = new System.Drawing.Point(423, 80);
+            this.fechalabel.Name = "fechalabel";
+            this.fechalabel.Size = new System.Drawing.Size(51, 15);
+            this.fechalabel.TabIndex = 35;
+            this.fechalabel.Text = "FECHA";
+            // 
+            // comilabel
+            // 
+            this.comilabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comilabel.AutoSize = true;
+            this.comilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comilabel.ForeColor = System.Drawing.Color.Silver;
+            this.comilabel.Location = new System.Drawing.Point(743, 80);
+            this.comilabel.Name = "comilabel";
+            this.comilabel.Size = new System.Drawing.Size(75, 15);
+            this.comilabel.TabIndex = 36;
+            this.comilabel.Text = "COMISION";
             // 
             // dataGridView1
             // 
@@ -591,9 +613,6 @@
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
@@ -616,10 +635,11 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.dataGridView1.Location = new System.Drawing.Point(275, 167);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -638,89 +658,146 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1513, 845);
-            this.dataGridView1.TabIndex = 18;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Size = new System.Drawing.Size(1133, 635);
+            this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // pictureBox2
+            // cuiResizeGrip1
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(933, 340);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.cuiResizeGrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cuiResizeGrip1.Cursor = System.Windows.Forms.Cursors.SizeNWSE;
+            this.cuiResizeGrip1.GripColor = System.Drawing.Color.Black;
+            this.cuiResizeGrip1.GripSize = 2;
+            this.cuiResizeGrip1.GripTexture = true;
+            this.cuiResizeGrip1.Location = new System.Drawing.Point(1324, 808);
+            this.cuiResizeGrip1.Name = "cuiResizeGrip1";
+            this.cuiResizeGrip1.Size = new System.Drawing.Size(26, 23);
+            this.cuiResizeGrip1.SkipBottomRightSquare = false;
+            this.cuiResizeGrip1.TabIndex = 20;
+            this.cuiResizeGrip1.TargetForm = this;
+            this.cuiResizeGrip1.TextureOffset = new System.Drawing.Size(-2, -2);
             // 
-            // label1
+            // comisionbox
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
-            this.label1.Location = new System.Drawing.Point(1000, 642);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 49);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "SisAlu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.comisionbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comisionbox.BackColor = System.Drawing.Color.Transparent;
+            this.comisionbox.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(57)))), ((int)(((byte)(49)))));
+            this.comisionbox.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.comisionbox.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.comisionbox.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.comisionbox.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.comisionbox.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.comisionbox.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.comisionbox.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.comisionbox.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.comisionbox.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.comisionbox.ExpandArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.comisionbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comisionbox.ForeColor = System.Drawing.Color.White;
+            this.comisionbox.Items = new string[0];
+            this.comisionbox.Location = new System.Drawing.Point(724, 103);
+            this.comisionbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comisionbox.Name = "comisionbox";
+            this.comisionbox.NoSelectionDropdownText = "Empty";
+            this.comisionbox.NoSelectionText = "None";
+            this.comisionbox.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.comisionbox.OutlineThickness = 1F;
+            this.comisionbox.Rounding = 8;
+            this.comisionbox.Size = new System.Drawing.Size(135, 30);
+            this.comisionbox.TabIndex = 37;
             // 
-            // panelformulario
+            // añolabel
             // 
-            this.panelformulario.BackColor = System.Drawing.Color.Transparent;
-            this.panelformulario.Location = new System.Drawing.Point(278, 169);
-            this.panelformulario.Name = "panelformulario";
-            this.panelformulario.Size = new System.Drawing.Size(1518, 842);
-            this.panelformulario.TabIndex = 20;
-            this.panelformulario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelformulario_Paint);
+            this.añolabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.añolabel.AutoSize = true;
+            this.añolabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.añolabel.ForeColor = System.Drawing.Color.Silver;
+            this.añolabel.Location = new System.Drawing.Point(600, 80);
+            this.añolabel.Name = "añolabel";
+            this.añolabel.Size = new System.Drawing.Size(35, 15);
+            this.añolabel.TabIndex = 38;
+            this.añolabel.Text = "AÑO";
+            // 
+            // carrelabel
+            // 
+            this.carrelabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.carrelabel.AutoSize = true;
+            this.carrelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carrelabel.ForeColor = System.Drawing.Color.Silver;
+            this.carrelabel.Location = new System.Drawing.Point(200, 83);
+            this.carrelabel.Name = "carrelabel";
+            this.carrelabel.Size = new System.Drawing.Size(71, 15);
+            this.carrelabel.TabIndex = 40;
+            this.carrelabel.Text = "CARRERA";
+            // 
+            // carrerabox
+            // 
+            this.carrerabox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.carrerabox.BackColor = System.Drawing.Color.Transparent;
+            this.carrerabox.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(57)))), ((int)(((byte)(49)))));
+            this.carrerabox.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.carrerabox.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.carrerabox.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.carrerabox.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.carrerabox.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.carrerabox.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.carrerabox.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.carrerabox.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.carrerabox.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.carrerabox.ExpandArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(219)))));
+            this.carrerabox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carrerabox.ForeColor = System.Drawing.Color.White;
+            this.carrerabox.Items = new string[0];
+            this.carrerabox.Location = new System.Drawing.Point(181, 102);
+            this.carrerabox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carrerabox.Name = "carrerabox";
+            this.carrerabox.NoSelectionDropdownText = "Empty";
+            this.carrerabox.NoSelectionText = "None";
+            this.carrerabox.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.carrerabox.OutlineThickness = 1F;
+            this.carrerabox.Rounding = 8;
+            this.carrerabox.Size = new System.Drawing.Size(194, 30);
+            this.carrerabox.TabIndex = 39;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1800, 1023);
+            this.ClientSize = new System.Drawing.Size(1350, 831);
+            this.Controls.Add(this.cuiResizeGrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelfondo);
+            this.Controls.Add(this.panelformulario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1800, 1000);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1350, 812);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelfondo.ResumeLayout(false);
-            this.panelfondo.PerformLayout();
-            this.panelcomision.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelformulario.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label label2;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
@@ -730,26 +807,27 @@
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton7;
-        private PlaceholderTextBox.PlaceholderTextBox placeholderTextBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panelfondo;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private FontAwesome.Sharp.IconButton comision1;
-        private FontAwesome.Sharp.IconButton comision2;
-        private FontAwesome.Sharp.IconButton comision3;
-        private FontAwesome.Sharp.IconButton comision4;
-        private FontAwesome.Sharp.IconButton comision5;
-        private FontAwesome.Sharp.IconButton comision6;
-        private FontAwesome.Sharp.IconButton comision7;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panelcomision;
         private System.Windows.Forms.Panel panel5;
-        private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton botonañadir;
+        private ReaLTaiizor.Controls.ControlBox controlBox1;
         private System.Windows.Forms.Panel panelformulario;
+        private CuoreUI.Controls.cuiComboBox añobox;
+        private ReaLTaiizor.Controls.CyberButton iniciar;
+        private CuoreUI.Controls.cuiComboBox fechabox;
+        private CuoreUI.Controls.cuiComboBox universidadbox;
+        private CuoreUI.Controls.cuiTextBox placeholderTextBox1;
+        private System.Windows.Forms.Label comilabel;
+        private System.Windows.Forms.Label fechalabel;
+        private System.Windows.Forms.Label unilabel;
+        private CuoreUI.Controls.cuiResizeGrip cuiResizeGrip1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label añolabel;
+        private CuoreUI.Controls.cuiComboBox comisionbox;
+        private System.Windows.Forms.Label carrelabel;
+        private CuoreUI.Controls.cuiComboBox carrerabox;
     }
 }

@@ -13,7 +13,7 @@ namespace SistemaParcial2OctavioGonzalez
 {
     public partial class Form3 : Form
     {
-        public (int comision, string nombre, int legajo, int edad, string correo) Estudiante { get; set; }
+        public (int comision, string nombre, int edad, int legajo, int DNI, string correo) Estudiante { get; set; }
         public Form3()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace SistemaParcial2OctavioGonzalez
         {
 
 
-            Estudiante = ((int.Parse(textBox5.Text), textBox1.Text, int.Parse(textBox4.Text), int.Parse(textBox2.Text), textBox3.Text));
+            Estudiante = ((int.Parse(textBox5.Text), textBox1.Text, int.Parse(textBox6.Text), int.Parse(textBox4.Text), int.Parse(textBox2.Text), textBox3.Text));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
