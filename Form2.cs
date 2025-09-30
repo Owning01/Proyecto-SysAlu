@@ -25,11 +25,58 @@ namespace SistemaParcial2OctavioGonzalez
         private string modoActual = "";
         private int nroComision = 0;
         private List<(int comision, string nombre, int edad, int legajo, int DNI, string correo)> estudiantes;
+        private void combos()
+        {
+            universidadbox.AddItem("UTN");
+            universidadbox.AddItem("UNT");
+            carrerabox.AddItem("Tecnicatura en Programacion");
+            fechabox.AddItem("2025");
+            añobox.AddItem("1er Año");
+            comisionbox.AddItem("1");
+            comisionbox.AddItem("2");
+            comisionbox.AddItem("3");
+            comisionbox.AddItem("4");
+            comisionbox.AddItem("5");
+            comisionbox.AddItem("6");
+            comisionbox.AddItem("7");
+        }
         public Form2()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             estudiantes = new List<(int comision, string nombre, int edad, int legajo, int DNI, string correo)>();
+
+            borsup();
+            //borde izquierdo para botones seleccionados en el panel izquierdo. 
+            leftBorder = new Panel();
+            leftBorder.Size = new Size(10, 83); 
+            leftBorder.BackColor = Color.FromArgb(85, 28, 35);
+            leftBorder.Visible = false;
+            leftBorder.Anchor = AnchorStyles.Left;
+            panel1.Controls.Add(leftBorder);
+
+            //panel fondo
+            
+            // Tooltips
+            toolTip1.SetToolTip(iconButton5, "Eliminar seleccion");
+            toolTip1.SetToolTip(iconButton7, "Buscar por nombre, dni, o legajo.");
+
+            //Esto es para el boton eliminar, para que no tire eer
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; 
+            dataGridView1.MultiSelect = false; 
+            dataGridView1.AllowUserToAddRows = false;
+
+
+            //Panel formuarlio para estadistica
+            panelformulario.Visible = true;
+            //Comboboxes.
+            combos();
+            ocultar1();
+        }
+
+        //borde superior
+        private void borsup()
+        {
             //Panel superior, con boton de cerrar nomas 
             panel3.Dock = DockStyle.Top;
             panel3.Height = 25;
@@ -49,30 +96,6 @@ namespace SistemaParcial2OctavioGonzalez
             //boton adicional
             controlBox1.Dock = DockStyle.Right;
             panel3.Controls.Add(controlBox1);
-           
-            //borde izquierdo para botones seleccionados en el panel izquierdo. 
-            leftBorder = new Panel();
-            leftBorder.Size = new Size(10, 83); 
-            leftBorder.BackColor = Color.FromArgb(85, 28, 35);
-            leftBorder.Visible = false;
-            leftBorder.Anchor = AnchorStyles.Left;
-            panel1.Controls.Add(leftBorder);
-
-            //panel fondo
-            new PanelResizer(panelfondo, 8);
-            // Tooltips
-            toolTip1.SetToolTip(iconButton5, "Eliminar seleccion");
-            toolTip1.SetToolTip(iconButton7, "Buscar por nombre, dni, o legajo.");
-
-            //Esto es para el boton eliminar, para que no tire eer
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; 
-            dataGridView1.MultiSelect = false; 
-            dataGridView1.AllowUserToAddRows = false;
-
-
-            //Panel formuarlio para estadistica
-
-            panelformulario.Visible = true;
         }
 //PERSONALIZACION:Cambia de color los botones seleccionados del panel superior cuando selecc notas o alumnos. 
         private void enviar (Object botonsito)
@@ -130,13 +153,45 @@ namespace SistemaParcial2OctavioGonzalez
             iconButton6.Visible = false;
             iconButton5.Visible = false;
             iconButton7.Visible = false;
-            iconButton4.Visible = false;
             botonañadir.Visible = false;
             placeholderTextBox1.Visible = false;
         }
+
+        //Mostrar botones del panel
+        private void ocultar1 ()
+        {
+            unilabel.Visible = false;
+            universidadbox.Visible = false;
+            carrerabox.Visible = false;
+            fechabox.Visible = false;
+            añobox.Visible = false;
+            comisionbox.Visible = false;
+            iniciar.Visible = false;
+            carrelabel.Visible = false;
+            fechalabel.Visible = false;
+            añolabel.Visible = false;
+            comilabel.Visible = false;
+        }  
+        private void mostrar1()
+        {
+            unilabel.Visible = true;
+            universidadbox.Visible = true;
+            carrerabox.Visible = true;
+            fechabox.Visible = true;
+            añobox.Visible = true;
+            comisionbox.Visible = true;
+            iniciar.Visible = true;
+            carrelabel.Visible = true;
+            fechalabel.Visible = true;
+            añolabel.Visible = true;
+            comilabel.Visible = true;
+        }
+
+
 //Boton alumno 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            mostrar1();
             modoActual = "Alumnos";
             if (iconButton1.IconColor == Color.FromArgb(101, 164, 171))
             {
@@ -145,22 +200,20 @@ namespace SistemaParcial2OctavioGonzalez
                 iconButton7.Visible = true;
                 iconButton6.Visible = true;
                 iconButton5.Visible = true;
-                iconButton4.Visible = false;
                 label1.Visible = false;
                 pictureBox1.Visible = true;
                 label2.Visible = true;
                 botonañadir.Visible= true;
                 pictureBox2.Visible = false;
-                enviar2(sender);
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
-                panelcomision.Visible = true;
                 ocultarformulario();
                 dataGridView1.Visible = true;
+                enviar2(sender);
             }
             else
             {
-                panelcomision.Visible = false;
+               
                 iconButton1.TextAlign = ContentAlignment.MiddleLeft;
                 iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
                 iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
@@ -172,8 +225,6 @@ namespace SistemaParcial2OctavioGonzalez
                 pictureBox2.Visible = true;
                 label1.Visible = true;
                 ocultarformulario();
-
-
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
                 //volver al color normal
@@ -195,10 +246,8 @@ namespace SistemaParcial2OctavioGonzalez
             pictureBox2.Visible = false;
             botonañadir.Visible = false;
             label1.Visible = false;
-            iconButton4.Visible= true;
             dataGridView1.Visible = true;
 
-            panelcomision.Visible = true;
             //LIMPIAR DATAGRID
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
@@ -208,17 +257,17 @@ namespace SistemaParcial2OctavioGonzalez
         private void ocultarformulario()
         {
             panelformulario.Controls.Clear();
-            panelformulario.Visible = false;
+            panelformulario.Controls.Add(dataGridView1);
         }
 
         //Funcion para abrir formulario desde el panel que quiera
-
+        Form fh = new Form();
         private void AbrirFormHija(Form formhija)
         {
             if (this.panelformulario.Controls.Count > 0)
                 this.panelformulario.Controls.RemoveAt(0);//Controla de que un formulario no haya sido abierto
             {
-                Form fh = formhija;
+                fh = formhija;
                 fh.TopLevel = false; //Indica que el formulario que se abrira, no sera el "admiN"
                 fh.Dock = DockStyle.Fill;  
                 this.panelformulario.Controls.Add(fh); //Añade el formulario al panel como si fuera un control 
@@ -238,10 +287,8 @@ namespace SistemaParcial2OctavioGonzalez
             iconButton7.Visible = false;
             iconButton6.Visible = false;
             iconButton5.Visible = false;
-            iconButton4.Visible = false;
             pictureBox2.Visible = false;
             label1.Visible = false;
-            panelcomision.Visible = false;
             botonañadir.Visible = false; 
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
@@ -403,91 +450,97 @@ namespace SistemaParcial2OctavioGonzalez
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
-        private void panelfondo_Paint(object sender, PaintEventArgs e)
-        {
-        }
-   
-        //COMISIONES BOTONES.
- 
-        private void btnComision_Click(object sender, EventArgs e)
-        {
-           IconButton btn = sender as IconButton;
-            nroComision = Convert.ToInt32(btn.Tag);
-           
-            if (btn.IconColor == Color.FromArgb(101, 164, 171))
-            {
-                enviar(sender);
-                dataGridView1.Columns.Clear();
-                dataGridView1.Rows.Clear();
 
-                if (modoActual == "Alumnos")
+
+        //COMISIONES BOTONES.
+        private void iniciar_Click(object sender, EventArgs e)
+        {
+            
+            dataGridView1.Visible = true;
+            dataGridView1.BringToFront();
+            string nur = universidadbox.SelectedItem;
+            switch (nur)
+            {
+                case "UTN":
+                    try
+                    {
+                        nroComision = int.Parse(comisionbox.SelectedItem);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Seleccione una comisión válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    btnComision();
+                    break;
+                case "UNT":
+                    MessageBox.Show("No añadio nada aun. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnComision();
+                    break;
+                default:
+                    break;
+            }
+
+            }
+
+        private void btnComision()
+        {
+
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+            iniciar.ColorBackground = Color.DarkOliveGreen;
+
+            if (modoActual == "Alumnos")
+            {
+                //Cargo columna
+                foreach (var n in obj.Ob8())
                 {
-                    //Cargo columna
-                    foreach (var n in obj.Ob8())
-                    {
-                        dataGridView1.Columns.Add(n.codigo, n.campo);
-                    }
-                    //Cargo filas
-                    foreach (var alumno in obj.Obcomision(nroComision))
-                    {
-                        dataGridView1.Rows.Add(alumno.Nombre, alumno.edad, alumno.Legajo, alumno.DNI, alumno.Correo);
-                    }
+                    dataGridView1.Columns.Add(n.codigo, n.campo);
                 }
-                else if (modoActual == "Notas")
+                //Cargo filas
+                foreach (var alumno in obj.Obcomision(nroComision))
                 {
-                    foreach (var p in obj1.colu())
-                    {
-                        dataGridView1.Columns.Add(p.codigo, p.campo);// columnas 
-                    }
-                    foreach (var alumno in obj.Obcomision(nroComision))
-                    {
-                        dataGridView1.Rows.Add(alumno.Nombre); //Añado todaslasfilas de cada nombre.
-                    }
-                    int fila = 0;
-                    foreach (var t in obj1.Nota(nroComision))
-                    {
-                        dataGridView1.Rows[fila].Cells["Lengua"].Value = t.Lengua;
-                        dataGridView1.Rows[fila].Cells["Ingles"].Value = t.Ingles;
-                        dataGridView1.Rows[fila].Cells["Matematica"].Value = t.Matematica;
-                        dataGridView1.Rows[fila].Cells["Economia"].Value = t.Economia;
-                        dataGridView1.Rows[fila].Cells["Politica"].Value = t.Politica;
-                        dataGridView1.Rows[fila].Cells["Asistencia"].Value = t.Asistencia;
-                        fila++;
-                    }
+                    dataGridView1.Rows.Add(alumno.Nombre, alumno.edad, alumno.Legajo, alumno.DNI, alumno.Correo);
                 }
             }
-            else
+            else if (modoActual == "Notas")
             {
-                btn.IconColor = Color.FromArgb(101, 164, 171);
-                dataGridView1.Columns.Clear();
-                dataGridView1.Rows.Clear();
+                foreach (var p in obj1.colu())
+                {
+                    dataGridView1.Columns.Add(p.codigo, p.campo);// columnas 
+                }
+                foreach (var alumno in obj.Obcomision(nroComision))
+                {
+                    dataGridView1.Rows.Add(alumno.Nombre); //Añado todaslasfilas de cada nombre.
+                }
+                int fila = 0;
+                foreach (var t in obj1.Nota(nroComision))
+                {
+                    dataGridView1.Rows[fila].Cells["Lengua"].Value = t.Lengua;
+                    dataGridView1.Rows[fila].Cells["Ingles"].Value = t.Ingles;
+                    dataGridView1.Rows[fila].Cells["Matematica"].Value = t.Matematica;
+                    dataGridView1.Rows[fila].Cells["Economia"].Value = t.Economia;
+                    dataGridView1.Rows[fila].Cells["Politica"].Value = t.Politica;
+                    dataGridView1.Rows[fila].Cells["Asistencia"].Value = t.Asistencia;
+                    fila++;
+                }
             }
         }
      
-        private void panelcomision_Paint(object sender, PaintEventArgs e)
-        {
-        }
-        private void iconButton4_Click_1(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            // Recorremos todas las filas
-            for (int fila = 0; fila < dataGridView1.Rows.Count; fila++)
-
-            {
-                double n1 = rnd.Next(0, 11);
-                double n2 = rnd.Next(0, 11);
-                double n3 = rnd.Next(0, 11);
-                double n4 = rnd.Next(0, 11);
-                double n5 = rnd.Next(0, 11);
-                dataGridView1.Rows[fila].Cells["Lengua"].Value = n1;
-                dataGridView1.Rows[fila].Cells["Matematica"].Value = n2;
-                dataGridView1.Rows[fila].Cells["Ingles"].Value = n3;
-                dataGridView1.Rows[fila].Cells["Economia"].Value = n4;
-                dataGridView1.Rows[fila].Cells["Politica"].Value = n5;
-            }
-        }
+       
+ 
         private void panelformulario_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void universidadbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -20,7 +20,7 @@ namespace SistemaParcial2OctavioGonzalez
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = iconButton3;
+            
             this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -46,30 +46,23 @@ namespace SistemaParcial2OctavioGonzalez
             f.Show();
             this.Hide();
         }
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-            if (usuario.Text.Trim().ToLower()== "admin")
-            {
-                
-                if ( contraseña.Content.Trim()=="1234")
-                {
-                    MessageBox.Show("Bienvenido", "Acceso concedido");
-                    Form2 f = new Form2();
-                    f.Show();
-                    this.Hide();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Usuario incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
         private void iconButton6_Click(object sender, EventArgs e)
         {
+            if (iconButton6.IconChar==FontAwesome.Sharp.IconChar.Eye)
+            {
            
+                iconButton6.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+                contraseña.PasswordChar = false;
+            }
+            else
+            {
+                iconButton6.IconChar = FontAwesome.Sharp.IconChar.Eye;
+                contraseña.PasswordChar = true;
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -101,6 +94,24 @@ namespace SistemaParcial2OctavioGonzalez
         private void contraseña_FinishedTypingContent(object sender, EventArgs e)
         {
 
+        }
+
+        private void cyberButton1_Click(object sender, EventArgs e)
+        {
+            if (usuario.Content.Trim().ToLower() == "admin")
+            {
+
+                if (contraseña.Content.Trim() == "1234")
+                {
+                    Form2 f = new Form2();
+                    f.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Usuario incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

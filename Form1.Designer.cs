@@ -30,18 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iniciar = new ReaLTaiizor.Controls.CyberButton();
+            this.contraseña = new CuoreUI.Controls.cuiTextBox();
+            this.usuario = new CuoreUI.Controls.cuiTextBox();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.controlBox1 = new ReaLTaiizor.Controls.ControlBox();
-            this.usuario = new ReaLTaiizor.Controls.TextBoxEdit();
-            this.contraseña = new CuoreUI.Controls.cuiOTPasswordBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -58,33 +57,6 @@
             this.button3.Text = "Ir a form2";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(149, 232);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Contraseña";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(151, 138);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario";
             // 
             // button4
             // 
@@ -115,31 +87,6 @@
             this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // iconButton3
-            // 
-            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.RightLong;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(164)))), ((int)(((byte)(171)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.Location = new System.Drawing.Point(225, 337);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.iconButton3.Size = new System.Drawing.Size(200, 35);
-            this.iconButton3.TabIndex = 25;
-            this.iconButton3.Text = "Iniciar Sesión";
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -157,12 +104,11 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.iniciar);
             this.panel1.Controls.Add(this.contraseña);
             this.panel1.Controls.Add(this.usuario);
             this.panel1.Controls.Add(this.iconButton6);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(1, 223);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -170,6 +116,122 @@
             this.panel1.Size = new System.Drawing.Size(632, 423);
             this.panel1.TabIndex = 29;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(283, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "LOGIN";
+            // 
+            // iniciar
+            // 
+            this.iniciar.Alpha = 20;
+            this.iniciar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iniciar.BackColor = System.Drawing.Color.Transparent;
+            this.iniciar.Background = true;
+            this.iniciar.Background_WidthPen = 4F;
+            this.iniciar.BackgroundPen = true;
+            this.iniciar.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(148)))));
+            this.iniciar.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.iniciar.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.iniciar.ColorBackground_Pen = System.Drawing.Color.DarkOliveGreen;
+            this.iniciar.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.iniciar.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.iniciar.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.iniciar.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.iniciar.Effect_1 = true;
+            this.iniciar.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.iniciar.Effect_1_Transparency = 25;
+            this.iniciar.Effect_2 = true;
+            this.iniciar.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.iniciar.Effect_2_Transparency = 20;
+            this.iniciar.Font = new System.Drawing.Font("Arial", 12F);
+            this.iniciar.ForeColor = System.Drawing.Color.Black;
+            this.iniciar.Lighting = false;
+            this.iniciar.LinearGradient_Background = false;
+            this.iniciar.LinearGradientPen = false;
+            this.iniciar.Location = new System.Drawing.Point(205, 345);
+            this.iniciar.Name = "iniciar";
+            this.iniciar.PenWidth = 15;
+            this.iniciar.Rounding = true;
+            this.iniciar.RoundingInt = 70;
+            this.iniciar.Size = new System.Drawing.Size(235, 50);
+            this.iniciar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.iniciar.TabIndex = 32;
+            this.iniciar.Tag = "Cyber";
+            this.iniciar.TextButton = "Iniciar Sesión";
+            this.iniciar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.iniciar.Timer_Effect_1 = 5;
+            this.iniciar.Timer_RGB = 300;
+            this.iniciar.Click += new System.EventHandler(this.cyberButton1_Click);
+            // 
+            // contraseña
+            // 
+            this.contraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contraseña.BackColor = System.Drawing.Color.Transparent;
+            this.contraseña.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.contraseña.Content = "";
+            this.contraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.contraseña.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.contraseña.FocusImageTint = System.Drawing.Color.Black;
+            this.contraseña.FocusOutlineColor = System.Drawing.Color.Black;
+            this.contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contraseña.ForeColor = System.Drawing.Color.Black;
+            this.contraseña.Image = null;
+            this.contraseña.ImageExpand = new System.Drawing.Point(0, 0);
+            this.contraseña.ImageOffset = new System.Drawing.Point(0, 0);
+            this.contraseña.Location = new System.Drawing.Point(153, 266);
+            this.contraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.contraseña.Multiline = false;
+            this.contraseña.Name = "contraseña";
+            this.contraseña.NormalImageTint = System.Drawing.Color.White;
+            this.contraseña.OutlineColor = System.Drawing.Color.Black;
+            this.contraseña.Padding = new System.Windows.Forms.Padding(16, 6, 16, 0);
+            this.contraseña.PasswordChar = true;
+            this.contraseña.PlaceholderColor = System.Drawing.Color.Gray;
+            this.contraseña.PlaceholderText = "Contraseña";
+            this.contraseña.Rounding = new System.Windows.Forms.Padding(8);
+            this.contraseña.Size = new System.Drawing.Size(347, 28);
+            this.contraseña.TabIndex = 31;
+            this.contraseña.TextOffset = new System.Drawing.Size(0, 0);
+            this.contraseña.UnderlinedStyle = true;
+            // 
+            // usuario
+            // 
+            this.usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.usuario.BackColor = System.Drawing.Color.Transparent;
+            this.usuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.usuario.Content = "";
+            this.usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.usuario.FocusBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
+            this.usuario.FocusImageTint = System.Drawing.Color.Black;
+            this.usuario.FocusOutlineColor = System.Drawing.Color.Black;
+            this.usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuario.ForeColor = System.Drawing.Color.Black;
+            this.usuario.Image = null;
+            this.usuario.ImageExpand = new System.Drawing.Point(0, 0);
+            this.usuario.ImageOffset = new System.Drawing.Point(0, 0);
+            this.usuario.Location = new System.Drawing.Point(153, 176);
+            this.usuario.Margin = new System.Windows.Forms.Padding(4);
+            this.usuario.Multiline = false;
+            this.usuario.Name = "usuario";
+            this.usuario.NormalImageTint = System.Drawing.Color.White;
+            this.usuario.OutlineColor = System.Drawing.Color.Black;
+            this.usuario.Padding = new System.Windows.Forms.Padding(16, 6, 16, 0);
+            this.usuario.PasswordChar = false;
+            this.usuario.PlaceholderColor = System.Drawing.Color.Gray;
+            this.usuario.PlaceholderText = "Usuario";
+            this.usuario.Rounding = new System.Windows.Forms.Padding(8);
+            this.usuario.Size = new System.Drawing.Size(347, 28);
+            this.usuario.TabIndex = 30;
+            this.usuario.TextOffset = new System.Drawing.Size(0, 0);
+            this.usuario.UnderlinedStyle = true;
             // 
             // iconButton6
             // 
@@ -185,7 +247,7 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton6.IconSize = 25;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(535, 282);
+            this.iconButton6.Location = new System.Drawing.Point(518, 271);
             this.iconButton6.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
@@ -200,14 +262,14 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(68)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(283, 51);
+            this.label3.Location = new System.Drawing.Point(196, 24);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 31);
+            this.label3.Size = new System.Drawing.Size(252, 52);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Login";
+            this.label3.Text = "Bienvenido";
             // 
             // controlBox1
             // 
@@ -227,42 +289,6 @@
             this.controlBox1.Size = new System.Drawing.Size(90, 25);
             this.controlBox1.TabIndex = 32;
             this.controlBox1.Text = "controlBox1";
-            // 
-            // usuario
-            // 
-            this.usuario.BackColor = System.Drawing.Color.Transparent;
-            this.usuario.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.usuario.ForeColor = System.Drawing.Color.White;
-            this.usuario.Image = null;
-            this.usuario.Location = new System.Drawing.Point(155, 171);
-            this.usuario.MaxLength = 32767;
-            this.usuario.Multiline = false;
-            this.usuario.Name = "usuario";
-            this.usuario.ReadOnly = false;
-            this.usuario.Size = new System.Drawing.Size(347, 41);
-            this.usuario.TabIndex = 30;
-            this.usuario.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.usuario.UseSystemPasswordChar = false;
-            // 
-            // contraseña
-            // 
-            this.contraseña.BoxAmount = 4;
-            this.contraseña.Content = "";
-            this.contraseña.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.contraseña.FocusedColor = System.Drawing.Color.White;
-            this.contraseña.FocusedTextColor = System.Drawing.Color.Black;
-            this.contraseña.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
-            this.contraseña.Location = new System.Drawing.Point(155, 282);
-            this.contraseña.Name = "contraseña";
-            this.contraseña.OnlyDigit = true;
-            this.contraseña.Rounding = 4;
-            this.contraseña.Size = new System.Drawing.Size(347, 27);
-            this.contraseña.TabIndex = 31;
-            this.contraseña.UnderlinedStyle = true;
-            this.contraseña.UnfocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.contraseña.UnfocusedColor = System.Drawing.Color.White;
-            this.contraseña.UnfocusedTextColor = System.Drawing.Color.Gray;
-            this.contraseña.FinishedTypingContent += new System.EventHandler(this.contraseña_FinishedTypingContent);
             // 
             // Form1
             // 
@@ -296,20 +322,18 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconButton6;
         private ReaLTaiizor.Controls.ControlBox controlBox1;
-        private CuoreUI.Controls.cuiOTPasswordBox contraseña;
-        private ReaLTaiizor.Controls.TextBoxEdit usuario;
+        private CuoreUI.Controls.cuiTextBox usuario;
+        private CuoreUI.Controls.cuiTextBox contraseña;
+        private ReaLTaiizor.Controls.CyberButton iniciar;
+        private System.Windows.Forms.Label label1;
     }
 }
 
